@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>
-    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tandem Trivia Results</title>
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div class="container">
-        <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore"></h1>            
-            <form>
-                <input 
-                    type="text" 
-                    name="username" 
-                    id="username" 
-                    placeholder="username"
-                />
-                <button 
-                    type="submit" 
-                    class="btn" 
-                    id="saveScoreBtn" 
-                    onclick="saveHighScore(event)"
-                    disabled
-                    >
-                Save
-                </button>
-            </form>
-            <a href="/game.html" class="btn">Play Again</a>
-            <a href="/" class="btn">Back to Home</a>
-
-        </div>
+  <div class="container">
+    <div class="flex-center flex-column" id="end">
+      <h3>You final score is</h3>
+      <h1 id="final-score">Goodbye</h1>
+      <form action="">
+        <input type="text" name="username" id="username" placeholder="username">
+        <button type="submit" class="btn" id="save-score-btn" onclick="saveHighScore(event)" disabled>Save</button>
+      </form>
+      <a href="game.html" class="btn">Play Again</a>
+      <a href="index.html" class="btn">Go To Homepage</a>
+      <p>Thanks for playing!</p>
     </div>
-    <script src="end.js"></script>
+  </div>
+  <script src="end.js"></script>
 </body>
 </html>
