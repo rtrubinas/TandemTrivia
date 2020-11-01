@@ -1,4 +1,4 @@
-# TriviaTraining
+# Tandem Trivia
 
 ## Table of contents
 * [General info](#general-info)
@@ -8,7 +8,7 @@
 * [Issues](#issues)
 
 ## General info
-This project is a simple quiz app, 
+This project is a quiz app for Tandem's Apprenticeship Code Challenge.
 	
 ## Technologies
 Project is created with:
@@ -32,4 +32,6 @@ or
 5. In your web browser's address bar, go to http://localhost:8000/index.html
 
 ## Issues
-* JSON file is inaccessible from file browser, due to CORS error. A localhost server is required. 
+* Correct answer is not highlighted when an incorrect answer is chosen.
+* JSON file is inaccessible from web browser, due to CORS error. A localhost server is required.
+* Encoding errors in text when sourcing questions from Open Trivia Database.
